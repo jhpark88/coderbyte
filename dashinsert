@@ -1,0 +1,8 @@
+def DashInsert(num)
+  num_str = num.to_s
+  num_str.gsub(/([13579])(?=[13579])/, '\1-')
+end
+   
+# keep this function call here 
+# to see how to enter arguments in Ruby scroll down   
+DashInsert(STDIN.gets)           
